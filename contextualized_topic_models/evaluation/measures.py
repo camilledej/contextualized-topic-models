@@ -231,8 +231,8 @@ class KLDivergence(Measure):
 
 
 def kl_div(a, b):
-    a = np.asarray(a, dtype=np.float)
-    b = np.asarray(b, dtype=np.float)
+    a = np.asarray(a, dtype=float)
+    b = np.asarray(b, dtype=float)
     return np.sum(np.where(a != 0, a * np.log(a / b), 0))
 
 
